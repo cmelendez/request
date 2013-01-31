@@ -39,6 +39,7 @@ if (process.logging) {
 
 try {
   https = require('https')
+  https.globalAgent.options.secureProtocol = 'SSLv3_method';
 } catch (e) {}
 
 try {
